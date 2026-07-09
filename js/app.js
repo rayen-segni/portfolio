@@ -11,43 +11,49 @@ const SERVICES_DATA = [
     title: "Full Stack Platforms",
     badge: "CLIENT PORTALS & DASHBOARDS",
     desc: "Complete setup from schema designs to fast web layouts. Includes certificate generation modules, Stripe billing, and CMS admin dashboards.",
-    price: "$600–2,500+"
+    price: "600–2,500+ TND"
   },
   {
     title: "Backend API Core",
     badge: "FASTAPI MICROSERVICES",
     desc: "Structuring asynchronous RESTful routes, setting up SQLAlchemy relational database structures, and configuring Alembic table migrations.",
-    price: "$300–1,200+"
+    price: "300–1,200+ TND"
+  },
+  {
+    title: "Showcase Websites (Vitrine)",
+    badge: "UI/UX & FRONTEND DEPLOYMENT",
+    desc: "Complete frontend project featuring customized UI/UX enhancements, responsive layouts, and domain deployment with secure certificate settings.",
+    price: "300–1,000 TND"
   },
   {
     title: "System Security",
     badge: "AUTH AUDITS & ENCRYPTION",
     desc: "Integrating JWT tokens, secure cookies, Role-Based Access Control, hashing logic (bcrypt), and auditing routes for SQL injections.",
-    price: "$250–1,000+"
+    price: "250–1,000+ TND"
   },
   {
     title: "DevOps & Cloud",
     badge: "DEPLOYMENT & BUILD HOOKS",
     desc: "Deploying servers on AWS/Render/Netlify, configuring Nginx proxies, organizing environment variables, and establishing CI/CD setups.",
-    price: "$150–600+"
+    price: "100–700+ TND"
   },
   {
     title: "API Enhancements",
     badge: "LATENCY & REFACTORING",
     desc: "Diagnosing database queries, adding Redis cache hooks, refactoring redundant functions, and reducing overall payload latency.",
-    price: "$150–700+"
+    price: "150–700+ TND"
   },
   {
     title: "SEO & GEO Engine",
     badge: "AI SEARCH OPTIMIZATION",
     desc: "Optimizing website markup structure for search engines (sitemaps, meta descriptions) and generative AI engines (JSON-LD schemas, citation layouts).",
-    price: "$200–700+"
+    price: "100–500+ TND"
   },
   {
     title: "Cloud Cost Audits",
     badge: "INFRASTRUCTURE TUNING",
     desc: "Auditing hosting services, disabling idle virtual hardware, optimizing storage buckets, and scaling database instances to save budget.",
-    price: "$300–1,500+"
+    price: "300–1,500+ TND"
   },
   {
     title: "AI RAG Agents",
