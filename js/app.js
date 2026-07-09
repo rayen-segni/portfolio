@@ -23,7 +23,7 @@ const SERVICES_DATA = [
     title: "Showcase Websites (Vitrine)",
     badge: "UI/UX & FRONTEND DEPLOYMENT",
     desc: "Complete frontend project featuring customized UI/UX enhancements, responsive layouts, and domain deployment with secure certificate settings.",
-    price: "300–1,000 TND"
+    price: "300–1,000+ TND"
   },
   {
     title: "System Security",
@@ -68,19 +68,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. Hide Loading Overlay
   const loader = document.getElementById('loader-overlay');
   if (loader) {
-    window.addEventListener('load', () => {
-      setTimeout(() => {
+    const hideLoader = () => {
+      if (!loader.classList.contains('fade-out')) {
         loader.classList.add('fade-out');
-      }, 500); // Small delay for visual aesthetic
-    });
-  }
+      }
+    };
 
-  // Fallback in case load event takes too long
-  setTimeout(() => {
-    if (loader && !loader.classList.contains('fade-out')) {
-      loader.classList.add('fade-out');
+    if (document.readyState === 'complete') {
+      hideLoader();
+    } else {
+      window.addEventListener('load', hideLoader);
+      // Fast fallback: fade out loader after 700ms if assets are slow to complete
+      setTimeout(hideLoader, 700);
     }
-  }, 3000);
+  }
 
   // Initialize features
   initThemeManager();
