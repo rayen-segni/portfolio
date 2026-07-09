@@ -11,19 +11,19 @@ const SERVICES_DATA = [
     title: "Full Stack Platforms",
     badge: "CLIENT PORTALS & DASHBOARDS",
     desc: "Complete setup from schema designs to fast web layouts. Includes certificate generation modules, Stripe billing, and CMS admin dashboards.",
-    price: "600–2,500+ TND"
+    price: "600–4,500+ TND"
   },
   {
     title: "Backend API Core",
     badge: "FASTAPI MICROSERVICES",
     desc: "Structuring asynchronous RESTful routes, setting up SQLAlchemy relational database structures, and configuring Alembic table migrations.",
-    price: "300–1,200+ TND"
+    price: "300–1,800+ TND"
   },
   {
     title: "Showcase Websites (Vitrine)",
     badge: "UI/UX & FRONTEND DEPLOYMENT",
     desc: "Complete frontend project featuring customized UI/UX enhancements, responsive layouts, and domain deployment with secure certificate settings.",
-    price: "300–1,000+ TND"
+    price: "100–1,000+ TND"
   },
   {
     title: "System Security",
