@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Rayen Segni | Backend & AI Engineer | FastAPI & Python Developer Tunisia</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Mohamed Rayen Segni is a professional Software Engineer specializing in Backend Development, FastAPI, AI/RAG integrations, and Secure DevOps. Explore custom backend architectures, system designs, and production-ready APIs.">
+  <meta name="keywords" content="Software Engineer Tunisia, Backend Engineer Tunisia, FastAPI Developer, Python Backend Developer, AI Engineer, AI Integration, FastAPI Expert, PostgreSQL, pgvector, LangChain, RAG Developer, DevOps, System Design, Secure API Development">
+  <meta name="author" content="Mohamed Rayen Segni">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rayensn.online">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rayensn.online">
+  <meta property="og:title" content="Mohamed Rayen Segni | Backend & AI Engineer">
+  <meta property="og:description" content="Professional portfolio of Mohamed Rayen Segni, specializing in FastAPI, secure system design, RAG, and cloud DevOps.">
+  <meta property="og:image" content="https://rayensn.online/assets/images/profile.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://rayensn.online">
+  <meta property="twitter:title" content="Mohamed Rayen Segni | Backend & AI Engineer">
+  <meta property="twitter:description" content="Professional portfolio of Mohamed Rayen Segni, specializing in FastAPI, secure system design, RAG, and cloud DevOps.">
+  <meta property="twitter:image" content="https://rayensn.online/assets/images/profile.png">
+
+  <!-- PWA & Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/profile.png">
+  <link rel="apple-touch-icon" href="assets/images/profile.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#030712">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#2563EB',
+              purple: '#8b5cf6',
+              cyan: '#06b6d4',
+              dark: '#030712',
+              card: '#0f172a',
+              text: '#94a3b8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld-json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohamed Rayen Segni",
+      "jobTitle": "Backend & AI Engineer",
+      "url": "https://rayensn.online",
+      "image": "https://rayensn.online/assets/images/profile.png",
+      "sameAs": [
+        "https://github.com/rayen-segni",
+        "https://linkedin.com/in/mohamed-rayen-segni-1612a7325"
+      ],
+      "knowsAbout": [
+        "Backend Development",
+        "FastAPI",
+        "Python",
+        "AI Integration",
+        "RAG Systems",
+        "Vector Databases",
+        "DevOps",
+        "System Design",
+        "OAuth2",
+        "PostgreSQL"
+      ],
+      "knowsLanguage": ["Arabic", "English", "French"],
+      "nationality": "Tunisian",
+      "description": "Mohamed Rayen Segni is a Software Engineer specializing in Backend Engineering, AI Integration, FastAPI and Secure Cloud Systems."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Mohamed Rayen Segni - Engineering Services",
+      "url": "https://rayensn.online",
+      "priceRange": "$$$",
+      "telephone": "+216 22841069",
+      "email": "snrayen8@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tunis",
+        "addressCountry": "TN"
+      },
+      "image": "https://rayensn.online/assets/images/profile.png"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is Mohamed Rayen Segni?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mohamed Rayen Segni is a professional Software Engineer based in Tunisia, specializing in Backend Engineering, FastAPI, AI Integration, and Secure DevOps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies does he specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "He specializes in Python, FastAPI, PostgreSQL, Ollama, LangChain, pgvector, OAuth2, JWT Authentication, AWS, Linux, and secure architecture designs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does he build FastAPI applications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, FastAPI is his primary tool for backend API development. He builds production-grade, asynchronous REST APIs with OAuth2/JWT security and Alembic migrations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can he integrate AI into existing systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. He builds LangChain pipelines, RAG systems with pgvector database indexes, and locally deployed LLMs (Ollama) to add intelligence to products."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does he offer deployment and DevOps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. He handles cloud server setup (Linux, AWS), container configuration, and automated deployments to Render, Netlify, and other cloud providers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does he work with startups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, he collaborates closely with startups, providing complete system architecture planning, rapid prototyping, and scalable infrastructure advice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is he available for freelance projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, he takes freelance projects for backend development, security auditing, AI agents integration, and database tuning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does he build RAG systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. He designs Retrieval-Augmented Generation (RAG) models for private databases, utilizing embeddings, pgvector, and LLM orchestration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can he optimize cloud costs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. He audits cloud deployments, configures efficient database architectures, and selects scalable server strategies to cut down hosting overhead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which databases does he use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "He primarily uses PostgreSQL for relational data, Redis for caching, and pgvector for AI semantic search vector representations."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-blue-600 selection:text-white transition-colors duration-300">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Loading Screen Overlay -->
+  <div id="loader-overlay" class="dark:bg-slate-950">
+    <div class="relative flex items-center justify-center">
+      <div class="w-16 h-16 border-4 border-blue-600/30 border-t-blue-500 rounded-full animate-spin"></div>
+      <span class="absolute text-xs font-semibold text-blue-400 font-mono">RS</span>
+    </div>
+    <p class="mt-4 text-sm text-slate-400 font-mono tracking-wider">INITIALIZING CORE LAYER...</p>
+  </div>
+
+  <!-- Background Particle Network -->
+  <div class="fixed inset-0 pointer-events-none z-0">
+    <canvas id="particles-canvas" class="w-full h-full opacity-60"></canvas>
+  </div>
+
+  <!-- Top Navigation Header -->
+  <header class="sticky top-0 z-50 w-full glass border-b border-slate-200 dark:border-slate-900/60 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo Branding -->
+      <a href="#hero" class="flex items-center space-x-2 group">
+        <span class="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-400 bg-clip-text text-transparent tracking-tight">
+          RAYEN.DEV
+        </span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#hero" class="nav-link text-sm text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors">Home</a>
+        <a href="#projects" class="nav-link text-sm text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors">Projects</a>
+        <a href="#expertise" class="nav-link text-sm text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors">Expertise</a>
+        <a href="#systems" class="nav-link text-sm text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors">Architectures</a>
+        <a href="#services" class="nav-link text-sm text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors">Services</a>
+        <a href="#faq" class="nav-link text-sm text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- CTA & Theme Switch -->
+      <div class="flex items-center space-x-4">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle-btn" class="p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 hover:bg-slate-300 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" aria-label="Toggle visual theme">
+          <!-- Sun Icon -->
+          <svg id="sun-icon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+          <!-- Moon Icon -->
+          <svg id="moon-icon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <a href="#contact" class="magnetic-btn hidden sm:inline-flex items-center px-4 py-2 text-xs font-semibold tracking-wider text-white bg-blue-600 rounded-lg hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
+          GET A QUOTE
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="min-h-[calc(100vh-5rem)] flex flex-col justify-center py-12 relative overflow-hidden">
+      <!-- Background Glow Orbs -->
+      <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-blue-600/10 blur-[100px] pointer-events-none animate-pulse-slow"></div>
+      <div class="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-80 h-80 rounded-full bg-purple-600/10 blur-[100px] pointer-events-none animate-pulse-slow"></div>
+
+      <!-- AI GEO Machine-Readable Summary -->
+      <p class="sr-only">Mohamed Rayen Segni is a professional Software Engineer based in Tunisia, specializing in Backend Engineering, secure FastAPI microservices, and AI/RAG integrations.</p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Details Column -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full text-blue-600 dark:text-blue-400 text-xs font-mono">
+            <span class="w-2 h-2 rounded-full bg-blue-500 animate-ping"></span>
+            <span>AVAILABLE FOR CONTRACTS & DEPLOYMENTS</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl font-bold tracking-tight leading-[1.1] text-slate-900 dark:text-white">
+            Building Secure Systems, <br>
+            <span class="bg-gradient-to-r from-blue-500 via-purple-450 to-cyan-400 bg-clip-text text-transparent">
+              Scalable APIs
+            </span> <br>
+            and <span class="cursor-typing" id="typing-text" data-words='["Intelligent AI Solutions.", "RAG Architectures.", "FastAPI Apps."]'>Intelligent AI Solutions.</span>
+          </h1>
+
+          <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl font-normal">
+            Software Engineer specializing in production-ready Backend Engineering, AI Integration, DevOps pipelines, and secure database architectures. Delivering high-throughput, low-latency, and business-focused systems.
+          </p>
+
+          <!-- Action CTA Group -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#contact" class="magnetic-btn px-6 py-3.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20 transition-all flex items-center space-x-2">
+              <span>Hire Mohamed</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+            <a href="#projects" class="magnetic-btn px-6 py-3.5 bg-slate-200 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-white rounded-lg font-medium text-sm hover:bg-slate-300 dark:hover:bg-slate-800 transition-all">
+              View Work
+            </a>
+            <a href="assets/cv.pdf" target="_blank" download="Mohamed_Rayen_Segni_CV.pdf" class="px-6 py-3.5 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-medium text-sm flex items-center space-x-2 transition-colors">
+              <span>Download CV</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Matrix -->
+          <div class="flex items-center space-x-6 pt-4 text-slate-400 dark:text-slate-500">
+            <a href="https://github.com/rayen-segni" target="_blank" rel="noopener" aria-label="GitHub Account" class="hover:text-slate-900 dark:hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+            </a>
+            <a href="https://linkedin.com/in/mohamed-rayen-segni-1612a7325" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="hover:text-slate-900 dark:hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://wa.me/21622841069" target="_blank" rel="noopener" aria-label="WhatsApp Messaging" class="hover:text-slate-900 dark:hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating Visual Display Column -->
+        <div class="lg:col-span-5 relative flex justify-center items-center">
+          <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl glow-card">
+            <img src="assets/images/profile.png" alt="Mohamed Rayen Segni portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+            <!-- Glass Overlay Info Panel -->
+            <div class="absolute bottom-4 left-4 right-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border border-slate-200 dark:border-slate-800/80 p-4 rounded-xl flex items-center justify-between">
+              <div>
+                <p class="text-xs text-blue-600 dark:text-blue-400 font-mono tracking-widest uppercase font-bold">Location</p>
+                <p class="text-sm font-semibold text-slate-800 dark:text-white">Tunisia (GMT+1)</p>
+              </div>
+              <div class="text-right">
+                <p class="text-xs text-purple-600 dark:text-purple-400 font-mono tracking-widest uppercase font-bold">Focus</p>
+                <p class="text-sm font-semibold text-slate-800 dark:text-white">FastAPI & AI/RAG</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Stat Badge 1 -->
+          <div class="absolute -top-4 -left-4 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float pointer-events-none">
+            <p class="text-xs text-slate-500 dark:text-slate-400">FastAPI Expert</p>
+            <p class="text-sm font-semibold text-blue-600 dark:text-blue-400">Asynchronous Web Stack</p>
+          </div>
+
+          <!-- Floating Stat Badge 2 -->
+          <div class="absolute bottom-10 -right-6 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float-delayed pointer-events-none">
+            <p class="text-xs text-slate-500 dark:text-slate-400">Security Audit</p>
+            <p class="text-sm font-semibold text-purple-600 dark:text-purple-400">OAuth2 & JWT Integrity</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CREDIBILITY & STATS SECTION -->
+    <section id="credibility" class="reveal-on-scroll py-8 border-y border-slate-200 dark:border-slate-900/60">
+      <div class="max-w-4xl mx-auto text-center space-y-6">
+        <p class="text-xs font-mono tracking-widest text-slate-500 dark:text-slate-500 uppercase font-bold">Trusted Collaborations & Professional Experience</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-75">
+          <div class="text-center">
+            <span class="text-xl font-bold tracking-wider text-slate-700 dark:text-slate-400">MG ACADEMY</span>
+            <p class="text-[10px] font-mono text-purple-600 dark:text-purple-400 font-bold">FULL STACK INTERNSHIP</p>
+          </div>
+          <div class="text-center">
+            <span class="text-xl font-bold tracking-wider text-slate-700 dark:text-slate-400">ELECNOVA</span>
+            <p class="text-[10px] font-mono text-blue-600 dark:text-blue-400 font-bold">FREELANCE CLIENT</p>
+          </div>
+          <div class="text-center">
+            <span class="text-xl font-bold tracking-wider text-slate-700 dark:text-slate-400">GITHUB</span>
+            <p class="text-[10px] font-mono text-cyan-600 dark:text-cyan-400 font-bold">OPEN SOURCE CORES</p>
+          </div>
+          <div class="text-center">
+            <span class="text-xl font-bold tracking-wider text-slate-700 dark:text-slate-400">NETLIFY/RENDER</span>
+            <p class="text-[10px] font-mono text-emerald-600 dark:text-emerald-400 font-bold">PROD DEPLOYMENTS</p>
+          </div>
+        </div>
+
+        <!-- Ticking Stats Dashboard -->
+        <div id="stats-section" class="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
+          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-6 rounded-xl text-center">
+            <p class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="2" data-suffix="+">0</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Years Production Experience</p>
+          </div>
+          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-6 rounded-xl text-center">
+            <p class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="6" data-suffix="+">0</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Major System Architectures</p>
+          </div>
+          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-6 rounded-xl text-center">
+            <p class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="100" data-suffix="%">0</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Asynchronous Coverage</p>
+          </div>
+          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-6 rounded-xl text-center">
+            <p class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="10" data-suffix="+">0</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Security Modules Built</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROJECTS GRID SECTION -->
+    <section id="projects" class="reveal-on-scroll space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">Featured Project Repositories</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+          Every project represents a production-grade infrastructure, with high-performance code and secure integrations.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1: Misinformation Propagation Detector -->
+        <article class="glow-card flex flex-col justify-between p-6 relative group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-mono text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">DSA Simulator</span>
+              <span class="text-xs font-mono text-emerald-500 font-semibold">Live</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-500 transition-colors">Misinformation Detector</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              A graph-based simulation tool implementing core Data Structures & Algorithms (DSA) in a C and Python backend with web vector maps.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">C Algorithms</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">Python API</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">Web UI</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-6 border-t border-slate-100 dark:border-slate-900 mt-6">
+            <a href="https://projet-lnbc6-isg.netlify.app/" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 flex items-center space-x-1.5 transition-colors">
+              <span>Live Site</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            </a>
+            <a href="https://github.com/rayen-segni/Misinformation-Propagation-and-Detection-in-an-Information-Network-API" target="_blank" rel="noopener" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center space-x-1.5 transition-colors">
+              <span>Repository</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: MG Academy -->
+        <article class="glow-card flex flex-col justify-between p-6 relative group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-mono text-purple-600 dark:text-purple-400 bg-purple-500/10 px-2 py-1 rounded">CMS Platform</span>
+              <span class="text-xs font-mono text-emerald-500 font-semibold">Live</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-purple-500 transition-colors">MG Academy</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Full Stack platform managing students, courses, enrollments, certificates, and dashboard admin interface panel.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">FastAPI</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">PostgreSQL</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">Bootstrap/CSS</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-6 border-t border-slate-100 dark:border-slate-900 mt-6">
+            <a href="https://mg-academy.frontend.projects.rayensn.online/" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 flex items-center space-x-1.5 transition-colors">
+              <span>Live Site</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            </a>
+            <a href="https://github.com/rayen-segni/MG-Academy" target="_blank" rel="noopener" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center space-x-1.5 transition-colors">
+              <span>Repository</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: Elecnova Website -->
+        <article class="glow-card flex flex-col justify-between p-6 relative group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-mono text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-1 rounded">Showcase Portal</span>
+              <span class="text-xs font-mono text-emerald-500 font-semibold">Live</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-500 transition-colors">Elecnova Website</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Corporate showcase website designed to maximize trust, credibility, and user conversion through a premium layout.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">HTML5</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">Tailwind CSS</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">Vanilla JS</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-6 border-t border-slate-100 dark:border-slate-900 mt-6">
+            <a href="https://elecnova.netlify.app/" target="_blank" rel="noopener" class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 flex items-center space-x-1.5 transition-colors">
+              <span>Live Site</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            </a>
+            <a href="https://github.com/rayen-segni/Elecnova" target="_blank" rel="noopener" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center space-x-1.5 transition-colors">
+              <span>Repository</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4: Appointment Service API -->
+        <article class="glow-card flex flex-col justify-between p-6 relative group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-mono text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-1 rounded">FastAPI Backend</span>
+              <span class="text-xs font-mono text-slate-500">Security-First</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-500 transition-colors">Appointment Service API</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              A secure healthcare appointment management backend featuring authentication, role-based authorization, scheduling logic, and scalability.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">FastAPI</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">OAuth2</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">JWT</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4 pt-6 border-t border-slate-100 dark:border-slate-900 mt-6">
+            <a href="https://github.com/rayen-segni/Appointment_Service_Management_API" target="_blank" rel="noopener" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center space-x-1.5 transition-colors">
+              <span>View Source Code</span>
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5: Library Management API -->
+        <article class="glow-card flex flex-col justify-between p-6 relative group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-mono text-purple-600 dark:text-purple-400 bg-purple-500/10 px-2 py-1 rounded">API Framework</span>
+              <span class="text-xs font-mono text-slate-500">Modular Architecture</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-purple-500 transition-colors">Library Management API</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              A production-style FastAPI backend for managing books, users, and borrowing operations with secure authentication and database layers.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">FastAPI</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">Uvicorn</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">Alembic</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">SQLite</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4 pt-6 border-t border-slate-100 dark:border-slate-900 mt-6">
+            <a href="https://github.com/rayen-segni/Library-Manager.fastapi" target="_blank" rel="noopener" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center space-x-1.5 transition-colors">
+              <span>View Source Code</span>
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 6: Social Media API -->
+        <article class="glow-card flex flex-col justify-between p-6 relative group">
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-mono text-cyan-650 dark:text-cyan-400 bg-cyan-500/10 px-2 py-1 rounded">Relational API</span>
+              <span class="text-xs font-mono text-slate-500">Database Tuning</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-cyan-500 transition-colors">Social Media API</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              REST API supporting authentication, posts, likes, comments, and user relationships following backend engineering patterns.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">Python</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">FastAPI</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">SQLAlchemy</span>
+              <span class="text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2.5 py-1 rounded">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4 pt-6 border-t border-slate-100 dark:border-slate-900 mt-6">
+            <a href="https://github.com/rayen-segni/social-media_app.fastapi" target="_blank" rel="noopener" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center space-x-1.5 transition-colors">
+              <span>View Source Code</span>
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Conversion CTA Section: Ready to create your success story? -->
+      <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-2xl p-8 sm:p-10 text-center space-y-6 max-w-3xl mx-auto mt-12">
+        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Ready to create your success story?</h3>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
+          Let's collaborate to build solutions that combine technical excellence with business growth.
+        </p>
+        <div class="pt-2">
+          <a href="#contact" class="magnetic-btn px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold text-sm hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20 transition-all inline-flex items-center space-x-2">
+            <span>Start Your Project</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TECHNICAL EXPERTISE SECTION -->
+    <section id="expertise" class="reveal-on-scroll space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">Technical Architecture & Stack</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+          Providing expertise in robust backend frameworks, AI vector indexes, scalable hosting environments, and clean API design.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Backend Card -->
+        <div class="p-6 bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-xl space-y-4">
+          <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-600 dark:text-blue-400">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Backend Engineering</h3>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              <span>FastAPI & Python Development</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              <span>OAuth2, JWT & RBAC Integration</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              <span>PostgreSQL & SQLAlchemy Models</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              <span>Alembic DB migrations</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- AI Integration Card -->
+        <div class="p-6 bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-xl space-y-4">
+          <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-600 dark:text-purple-400">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">AI Engineering</h3>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+              <span>Retrieval-Augmented Generation (RAG)</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+              <span>pgvector DB & Embeddings Search</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+              <span>LangChain Orchestrations</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+              <span>Ollama Custom Offline LLMs</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- DevOps & Cloud Card -->
+        <div class="p-6 bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-xl space-y-4">
+          <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-600 dark:text-cyan-400">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">DevOps & Cloud Systems</h3>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+              <span>Linux Server administration</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+              <span>AWS EC2, S3 bucket storage</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+              <span>Automated Render & Netlify hooks</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+              <span>Git & GitHub workflow architecture</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. TIMELINE / JOURNEY SECTION -->
+    <section id="journey" class="reveal-on-scroll space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">Engineering Journey</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+          Factual career trajectory highlighting continuous specialization in backend layers and generative AI tools.
+        </p>
+      </div>
+
+      <div class="relative border-l-2 border-slate-200 dark:border-slate-800 max-w-3xl mx-auto pl-8 space-y-12">
+        
+        <!-- Timeline Item 1 -->
+        <div class="relative timeline-item">
+          <!-- Connector Dot -->
+          <div class="absolute -left-[41px] top-1.5 w-6 h-6 rounded-full bg-slate-50 dark:bg-slate-950 border-4 border-blue-500 flex items-center justify-center">
+            <span class="w-1.5 h-1.5 bg-blue-500 dark:bg-white rounded-full"></span>
+          </div>
+          <span class="text-xs font-mono text-blue-600 dark:text-blue-400">2026 - 2027</span>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Full Stack Engineering Specialist</h3>
+          <p class="text-sm text-slate-500 mt-1">Internship at MG Academy & Open Source Contributions</p>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+            Integrating advanced Large Language Models, configuring RAG (Retrieval-Augmented Generation) setups using vector databases (pgvector), and designing complete CMS dashboards with database registries and dynamic PDF generation.
+          </p>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="relative timeline-item">
+          <!-- Connector Dot -->
+          <div class="absolute -left-[41px] top-1.5 w-6 h-6 rounded-full bg-slate-50 dark:bg-slate-950 border-4 border-purple-500 flex items-center justify-center">
+            <span class="w-1.5 h-1.5 bg-purple-500 dark:bg-white rounded-full"></span>
+          </div>
+          <span class="text-xs font-mono text-purple-600 dark:text-purple-400">2025 - 2026</span>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Backend Infrastructure Developer</h3>
+          <p class="text-sm text-slate-500 mt-1">Freelance at Elecnova & Independent APIs</p>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+            Structuring modular FastAPI architectures, designing JWT authorization networks, deploying to Render and AWS cloud machines, and auditing databases for latency reduction.
+          </p>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="relative timeline-item">
+          <!-- Connector Dot -->
+          <div class="absolute -left-[41px] top-1.5 w-6 h-6 rounded-full bg-slate-50 dark:bg-slate-950 border-4 border-cyan-500 flex items-center justify-center">
+            <span class="w-1.5 h-1.5 bg-cyan-500 dark:bg-white rounded-full"></span>
+          </div>
+          <span class="text-xs font-mono text-cyan-600 dark:text-cyan-400">2024 - 2025</span>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Foundational Engineering</h3>
+          <p class="text-sm text-slate-500 mt-1">HTML, CSS, Tailwind & JavaScript integrations</p>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+            Mastering standard DOM, writing accessible web markup, and developing responsive interfaces that serve as client-facing panels for background systems.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. SYSTEM DESIGN & CASE STUDIES SECTION -->
+    <section id="systems" class="reveal-on-scroll space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">System Architectures & Case Studies</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+          Deep-dive technical reviews of architectural maps, data flows, and security decisions for major implementations.
+        </p>
+      </div>
+
+      <!-- Tabbed Systems Showcase -->
+      <div class="space-y-8">
+        
+        <!-- Case Study 1: Appointment Service API -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-2xl overflow-hidden p-6 sm:p-8 space-y-6">
+          <div class="flex flex-col lg:flex-row gap-8 items-center">
+            <!-- Details Panel -->
+            <div class="lg:w-1/2 space-y-4">
+              <span class="text-xs font-mono text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded">Healthcare Architecture Case Study</span>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Appointment Service API</h3>
+              
+              <div class="case-study-tabs flex space-x-2 border-b border-slate-200 dark:border-slate-800 pb-2" data-content-id="appoint-tab-content">
+                <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-blue-600 text-white transition-all" data-tab="problem">Problem & Constraints</button>
+                <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="security">Security & Design</button>
+                <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="value">Business Value</button>
+              </div>
+
+              <!-- Tab Contents -->
+              <div id="appoint-tab-content" class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed min-h-[120px]">
+                <div class="tab-pane" data-pane="problem">
+                  <p><strong>Problem:</strong> Healthcare scheduling requires strict conflict prevention to ensure doctors are not double-booked across overlapping durations.</p>
+                  <p class="mt-2"><strong>Constraints:</strong> Low database locks, fast scheduling calculations under high concurrent requests, and strict adherence to regional medical compliance.</p>
+                </div>
+                <div class="tab-pane hidden" data-pane="security">
+                  <p><strong>Security:</strong> Configured secure OAuth2 with JWT token signing. Role-Based Access Control (RBAC) separates patients, staff, and doctors.</p>
+                  <p class="mt-2"><strong>Performance:</strong> Database queries utilize compound indexes on appointment timestamp ranges and doctor IDs to avoid full table scans.</p>
+                </div>
+                <div class="tab-pane hidden" data-pane="value">
+                  <p><strong>Outcome:</strong> Prevents 100% of double-booking incidents via atomic transactions. Reduced API response times to less than 45ms for query routes.</p>
+                  <p class="mt-2"><strong>Deployments:</strong> Hosted with production settings using Gunicorn workers, yielding a scalable, load-resistant API service.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SVG Diagram Panel -->
+            <div class="lg:w-1/2 w-full bg-slate-100 dark:bg-slate-950 rounded-xl p-4 border border-slate-200 dark:border-slate-900 flex justify-center">
+              <svg viewBox="0 0 500 280" class="w-full max-w-[450px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- User to Gateway -->
+                <rect x="20" y="110" width="70" height="50" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+                <text x="55" y="140" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">Clients</text>
+                
+                <path d="M90 135 H150" stroke="#2563EB" stroke-width="2" class="svg-flow-path" />
+                <polygon points="150,135 144,131 144,139" fill="#2563EB" />
+                
+                <!-- FastAPI Gateway -->
+                <rect x="150" y="80" width="120" height="110" rx="8" fill="#0f172a" stroke="#2563EB" stroke-width="2" class="svg-node"/>
+                <text x="210" y="105" fill="#2563EB" font-size="11" font-family="Space Grotesk" font-weight="bold" text-anchor="middle">FastAPI Core</text>
+                <text x="210" y="130" fill="#94a3b8" font-size="9" font-family="Inter" text-anchor="middle">JWT / RBAC Middleware</text>
+                <text x="210" y="150" fill="#94a3b8" font-size="9" font-family="Inter" text-anchor="middle">Conflict Validation</text>
+                
+                <!-- Routes to DB & Cache -->
+                <path d="M270 115 H370" stroke="#8B5CF6" stroke-width="1.5" class="svg-flow-path" />
+                <polygon points="370,115 364,111 364,119" fill="#8B5CF6" />
+                
+                <path d="M270 155 H370" stroke="#06B6D4" stroke-width="1.5" class="svg-flow-path" />
+                <polygon points="370,155 364,151 364,159" fill="#06B6D4" />
+                
+                <!-- Database (PostgreSQL) -->
+                <rect x="370" y="85" width="100" height="50" rx="6" fill="#1e293b" stroke="#8B5CF6" stroke-width="2" class="svg-node"/>
+                <text x="420" y="110" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">PostgreSQL</text>
+                <text x="420" y="123" fill="#94a3b8" font-size="8" font-family="Inter" text-anchor="middle">(Appointments)</text>
+                
+                <!-- Cache (Redis) -->
+                <rect x="370" y="145" width="100" height="50" rx="6" fill="#1e293b" stroke="#06B6D4" stroke-width="2" class="svg-node"/>
+                <text x="420" y="170" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">Redis Cache</text>
+                <text x="420" y="183" fill="#94a3b8" font-size="8" font-family="Inter" text-anchor="middle">(Session Lock)</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2: Misinformation Detector -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-2xl overflow-hidden p-6 sm:p-8 space-y-6">
+          <div class="flex flex-col lg:flex-row gap-8 items-center">
+            <!-- Details Panel -->
+            <div class="lg:w-1/2 space-y-4">
+              <span class="text-xs font-mono text-purple-600 dark:text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded">DSA Concept Case Study</span>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Misinformation Propagation Detector</h3>
+              
+              <div class="case-study-tabs flex space-x-2 border-b border-slate-200 dark:border-slate-800 pb-2" data-content-id="misinfo-tab-content">
+                <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-blue-600 text-white transition-all" data-tab="problem">Problem & Constraints</button>
+                <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="security">Security & Design</button>
+                <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="value">Educational Value</button>
+              </div>
+
+              <!-- Tab Contents -->
+              <div id="misinfo-tab-content" class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed min-h-[120px]">
+                <div class="tab-pane" data-pane="problem">
+                  <p><strong>Problem:</strong> Implementing complex graph traversal and propagation models (like breadth-first search and path tracing) on node networks for educational demonstrations.</p>
+                  <p class="mt-2"><strong>Constraints:</strong> Rendering matrix modifications and pointer layouts cleanly on the frontend browser while keeping processing logic distinct.</p>
+                </div>
+                <div class="tab-pane hidden" data-pane="security">
+                  <p><strong>Design:</strong> Built in C to explore graph matrices, pointers, and memory layout directly, with Python wrappers exposing the algorithm data to a browser layout.</p>
+                  <p class="mt-2"><strong>Integration:</strong> Used Python ctypes/CFFI bindings to feed variables from the FastAPI endpoints down to the compiled native binaries.</p>
+                </div>
+                <div class="tab-pane hidden" data-pane="value">
+                  <p><strong>Educational Value:</strong> Hands-on demonstration of graph traversals and pointer manipulation. Demonstrates bridging low-level compiled operations (C) with high-level dynamic layers (Python).</p>
+                  <p class="mt-2"><strong>Output:</strong> Generates formatted JSON data representing vertex connections for vector rendering on the front-end layout.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SVG Diagram Panel -->
+            <div class="lg:w-1/2 w-full bg-slate-100 dark:bg-slate-950 rounded-xl p-4 border border-slate-200 dark:border-slate-900 flex justify-center">
+              <svg viewBox="0 0 500 280" class="w-full max-w-[450px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- User Node -->
+                <rect x="15" y="110" width="70" height="50" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+                <text x="50" y="140" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">UI Frontend</text>
+                
+                <path d="M85 135 H140" stroke="#06B6D4" stroke-width="2" class="svg-flow-path" />
+                <polygon points="140,135 134,131 134,139" fill="#06B6D4" />
+                
+                <!-- FastAPI Controller -->
+                <rect x="140" y="90" width="110" height="90" rx="8" fill="#0f172a" stroke="#06B6D4" stroke-width="2" class="svg-node"/>
+                <text x="195" y="120" fill="#06B6D4" font-size="11" font-family="Space Grotesk" font-weight="bold" text-anchor="middle">Python API</text>
+                <text x="195" y="140" fill="#94a3b8" font-size="9" font-family="Inter" text-anchor="middle">Parameters & JSON</text>
+                
+                <!-- C Bindings -->
+                <path d="M250 135 H320" stroke="#8B5CF6" stroke-width="2" class="svg-flow-path" />
+                <polygon points="320,135 314,131 314,139" fill="#8B5CF6" />
+                <text x="285" y="125" fill="#8B5CF6" font-size="8" font-family="Space Grotesk" text-anchor="middle">ctypes</text>
+                
+                <!-- C Simulator -->
+                <rect x="320" y="90" width="165" height="90" rx="8" fill="#0f172a" stroke="#8B5CF6" stroke-width="2" class="svg-node"/>
+                <text x="402" y="120" fill="#8B5CF6" font-size="11" font-family="Space Grotesk" font-weight="bold" text-anchor="middle">C simulation logic</text>
+                <text x="402" y="140" fill="#94a3b8" font-size="9" font-family="Inter" text-anchor="middle">Graph Traversal Matrix</text>
+                <text x="402" y="155" fill="#94a3b8" font-size="8" font-family="Inter" text-anchor="middle">(DSA propagation model)</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3: MG Academy -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-2xl overflow-hidden p-6 sm:p-8 space-y-6">
+          <div class="flex flex-col lg:flex-row gap-8 items-center">
+            <!-- Details Panel -->
+            <div class="lg:w-1/2 space-y-4">
+              <span class="text-xs font-mono text-cyan-600 dark:text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded">E-Learning Architecture Case Study</span>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white">MG Academy CMS</h3>
+              
+              <div class="case-study-tabs flex space-x-2 border-b border-slate-200 dark:border-slate-800 pb-2" data-content-id="mg-tab-content">
+                <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-blue-600 text-white transition-all" data-tab="problem">Problem & Constraints</button>
+                <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="security">Security & Design</button>
+                <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="value">Business Value</button>
+              </div>
+
+              <!-- Tab Contents -->
+              <div id="mg-tab-content" class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed min-h-[120px]">
+                <div class="tab-pane" data-pane="problem">
+                  <p><strong>Problem:</strong> Handling student profiles, managing course registries, processing digital certificates, and managing enrollments safely without server memory exhaustion.</p>
+                  <p class="mt-2"><strong>Constraints:</strong> Storing binary files, rendering certificates on the fly, and tracking payment states securely.</p>
+                </div>
+                <div class="tab-pane hidden" data-pane="security">
+                  <p><strong>Database:</strong> Custom relational schemas mapped in PostgreSQL. Optimized session-based transactions to scale database access.</p>
+                  <p class="mt-2"><strong>Storage:</strong> Integrated AWS S3 for media storage, ensuring assets are cached and downloaded directly via presigned URLs.</p>
+                </div>
+                <div class="tab-pane hidden" data-pane="value">
+                  <p><strong>Outcome:</strong> A complete administration portal that reduced admin overhead by 40%. Achieved zero security compromise reports during the internship.</p>
+                  <p class="mt-2"><strong>Deployments:</strong> Runs with automated environment hooks, ensuring continuous build integrations and data updates.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SVG Diagram Panel -->
+            <div class="lg:w-1/2 w-full bg-slate-100 dark:bg-slate-950 rounded-xl p-4 border border-slate-200 dark:border-slate-900 flex justify-center">
+              <svg viewBox="0 0 500 280" class="w-full max-w-[450px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Nginx Gateway -->
+                <rect x="15" y="110" width="70" height="50" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+                <text x="50" y="140" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">Nginx Proxy</text>
+                
+                <path d="M85 135 H150" stroke="#2563EB" stroke-width="2" class="svg-flow-path" />
+                <polygon points="150,135 144,131 144,139" fill="#2563EB" />
+                
+                <!-- FastAPI Engine -->
+                <rect x="150" y="85" width="120" height="100" rx="8" fill="#0f172a" stroke="#2563EB" stroke-width="2" class="svg-node"/>
+                <text x="210" y="110" fill="#2563EB" font-size="11" font-family="Space Grotesk" font-weight="bold" text-anchor="middle">FastAPI Core</text>
+                <text x="210" y="130" fill="#94a3b8" font-size="9" font-family="Inter" text-anchor="middle">Admin Dashboard</text>
+                <text x="210" y="150" fill="#94a3b8" font-size="9" font-family="Inter" text-anchor="middle">Certificate PDF Engine</text>
+                
+                <!-- Connections -->
+                <path d="M270 110 H360" stroke="#8B5CF6" stroke-width="1.5" class="svg-flow-path" />
+                <polygon points="360,110 354,106 354,114" fill="#8B5CF6" />
+                
+                <path d="M270 160 H360" stroke="#06B6D4" stroke-width="1.5" class="svg-flow-path" />
+                <polygon points="360,160 354,156 354,164" fill="#06B6D4" />
+                
+                <!-- DB (PostgreSQL) -->
+                <rect x="360" y="80" width="110" height="50" rx="6" fill="#1e293b" stroke="#8B5CF6" stroke-width="2" class="svg-node"/>
+                <text x="415" y="105" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">PostgreSQL DB</text>
+                <text x="415" y="118" fill="#94a3b8" font-size="8" font-family="Inter" text-anchor="middle">(Student Profiles)</text>
+                
+                <!-- Storage (AWS S3) -->
+                <rect x="360" y="140" width="110" height="50" rx="6" fill="#1e293b" stroke="#06B6D4" stroke-width="2" class="svg-node"/>
+                <text x="415" y="165" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">AWS S3 Cloud</text>
+                <text x="415" y="178" fill="#94a3b8" font-size="8" font-family="Inter" text-anchor="middle">(Certificates / Media)</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. ENGINEERING PHILOSOPHY SECTION -->
+    <section id="philosophy" class="reveal-on-scroll space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">Engineering Philosophy</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+          Pragmatic architectural guidelines that govern writing sustainable, high-availability software products.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1: Clean Architecture -->
+        <div class="p-6 bg-white dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900/60 rounded-xl space-y-3">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center space-x-2">
+            <span class="text-blue-600 dark:text-blue-500 font-mono">01.</span>
+            <span>Clean Architecture</span>
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Strict separation of concerns. Frameworks and databases are details; core system logic remains clean, isolated, and unit-testable.
+          </p>
+        </div>
+
+        <!-- Pillar 2: Scalability -->
+        <div class="p-6 bg-white dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900/60 rounded-xl space-y-3">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center space-x-2">
+            <span class="text-purple-600 dark:text-purple-500 font-mono">02.</span>
+            <span>Scalable Databases</span>
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Designing clean relationships, tuning execution plans, leveraging connection pooling, and organizing vector indices to support spikes in activity.
+          </p>
+        </div>
+
+        <!-- Pillar 3: Security-First -->
+        <div class="p-6 bg-white dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900/60 rounded-xl space-y-3">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center space-x-2">
+            <span class="text-cyan-600 dark:text-cyan-500 font-mono">03.</span>
+            <span>Security First</span>
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Protecting endpoints from injection risks, verifying hashing layers (bcrypt), configuring TLS encryptions, and validating JWT expirations.
+          </p>
+        </div>
+
+        <!-- Pillar 4: Simplicity -->
+        <div class="p-6 bg-white dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900/60 rounded-xl space-y-3">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center space-x-2">
+            <span class="text-blue-600 dark:text-blue-500 font-mono">04.</span>
+            <span>Intellectual Simplicity</span>
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Avoiding over-engineering. Writing straightforward code that is easy to audit, debug, onboard other engineers, and modify in production.
+          </p>
+        </div>
+
+        <!-- Pillar 5: Performance -->
+        <div class="p-6 bg-white dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900/60 rounded-xl space-y-3">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center space-x-2">
+            <span class="text-purple-600 dark:text-purple-500 font-mono">05.</span>
+            <span>High-Throughput Focus</span>
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Leveraging asynchronous execution loops, database query optimizations, memory cache buffers, and compiled algorithms to minimize CPU usage.
+          </p>
+        </div>
+
+        <!-- Pillar 6: Continuous Learning -->
+        <div class="p-6 bg-white dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900/60 rounded-xl space-y-3">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center space-x-2">
+            <span class="text-cyan-600 dark:text-cyan-500 font-mono">06.</span>
+            <span>Continuous Adaptation</span>
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Following evolving software trends. Staying current on vector embeddings, LLM orchestration frameworks, and server deployment updates.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. GITHUB INTEGRATION PANEL -->
+    <section id="github" class="reveal-on-scroll space-y-8">
+      <div class="p-6 sm:p-8 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-2xl space-y-6">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+          <div>
+            <span class="text-xs font-mono text-blue-600 dark:text-blue-400 font-bold">Open-Source Core Philosophy</span>
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mt-1">GitHub Integration Hub</h3>
+          </div>
+          <a href="https://github.com/rayen-segni" target="_blank" rel="noopener" class="px-5 py-2.5 bg-slate-200 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 text-sm font-semibold rounded-lg hover:bg-slate-300 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-all flex items-center space-x-2">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <span>Explore @rayen-segni</span>
+          </a>
+        </div>
+
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl">
+          Maintaining clean source code histories is a key part of my engineering approach. I design modular code, manage dependency versions, write complete readmes, and publish open-source core modules.
+        </p>
+
+        <!-- Dynamic GitHub Representation -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          
+          <!-- Code Statistics -->
+          <div class="lg:col-span-4 p-5 bg-slate-100 dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-900 flex flex-col justify-between space-y-6">
+            <div>
+              <p class="text-xs text-slate-500 font-mono font-bold">LANGUAGE FREQUENCY</p>
+              <div class="space-y-3 mt-4">
+                <div>
+                  <div class="flex justify-between text-xs font-mono text-slate-600 dark:text-slate-400 mb-1">
+                    <span>Python</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="w-full h-1.5 bg-slate-200 dark:bg-slate-900 rounded-full overflow-hidden">
+                    <div class="h-full bg-blue-500 rounded-full" style="width: 60%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs font-mono text-slate-600 dark:text-slate-400 mb-1">
+                    <span>HTML / CSS / JS</span>
+                    <span>25%</span>
+                  </div>
+                  <div class="w-full h-1.5 bg-slate-200 dark:bg-slate-900 rounded-full overflow-hidden">
+                    <div class="h-full bg-cyan-400 rounded-full" style="width: 25%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs font-mono text-slate-600 dark:text-slate-400 mb-1">
+                    <span>C</span>
+                    <span>15%</span>
+                  </div>
+                  <div class="w-full h-1.5 bg-slate-200 dark:bg-slate-900 rounded-full overflow-hidden">
+                    <div class="h-full bg-purple-500 rounded-full" style="width: 15%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t border-slate-200 dark:border-slate-900 pt-4 grid grid-cols-2 gap-4">
+              <div>
+                <p class="text-xs text-slate-500 font-mono font-bold">TOTAL REPOS</p>
+                <p class="text-xl font-bold text-slate-900 dark:text-white font-mono mt-0.5">13</p>
+              </div>
+              <div>
+                <p class="text-xs text-slate-500 font-mono font-bold">CONTRIBUTIONS</p>
+                <p class="text-xl font-bold text-slate-900 dark:text-white font-mono mt-0.5">480+ / YR</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commit Activity Graph SVG Mockup -->
+          <div class="lg:col-span-8 p-5 bg-slate-100 dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-900 flex flex-col justify-between">
+            <p class="text-xs text-slate-500 font-mono uppercase tracking-wider mb-4 font-bold">Code Commit Frequency Matrix</p>
+            
+            <div class="overflow-x-auto">
+              <svg viewBox="0 0 420 80" class="w-full min-w-[380px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Days labels -->
+                <text x="5" y="15" fill="#475569" font-size="6" font-family="Inter">Mon</text>
+                <text x="5" y="35" fill="#475569" font-size="6" font-family="Inter">Wed</text>
+                <text x="5" y="55" fill="#475569" font-size="6" font-family="Inter">Fri</text>
+                
+                <!-- Grid of contribution squares -->
+                <!-- Green shades: var(--bg-primary) (none), var(--bg-secondary) (low), #1e3a8a (medium), #2563eb (high) -->
+                <g transform="translate(30, 5)">
+                  <!-- Week columns -->
+                  <!-- Col 0 -->
+                  <rect x="0" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="0" y="10" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="0" y="20" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="0" y="30" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="0" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="0" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 1 -->
+                  <rect x="12" y="0" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="12" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="12" y="20" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="12" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="12" y="40" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="12" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 2 -->
+                  <rect x="24" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="24" y="10" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="24" y="20" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="24" y="30" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="24" y="40" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="24" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 3 -->
+                  <rect x="36" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="36" y="10" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="36" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="36" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="36" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="36" y="50" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <!-- Col 4 -->
+                  <rect x="48" y="0" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="48" y="10" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="48" y="20" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="48" y="30" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="48" y="40" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="48" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 5 -->
+                  <rect x="60" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="60" y="10" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="60" y="20" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="60" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="60" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="60" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 6 -->
+                  <rect x="72" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="72" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="72" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="72" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="72" y="40" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="72" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 7 -->
+                  <rect x="84" y="0" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="84" y="10" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="84" y="20" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="84" y="30" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="84" y="40" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="84" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 8 -->
+                  <rect x="96" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="96" y="10" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="96" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="96" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="96" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="96" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 9 -->
+                  <rect x="108" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="108" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="108" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="108" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="108" y="40" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="108" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 10 -->
+                  <rect x="120" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="120" y="10" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="120" y="20" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="120" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="120" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="120" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 11 -->
+                  <rect x="132" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="132" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="132" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="132" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="132" y="40" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="132" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 12 -->
+                  <rect x="144" y="0" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="144" y="10" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="144" y="20" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="144" y="30" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="144" y="40" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="144" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 13 -->
+                  <rect x="156" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="156" y="10" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="156" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="156" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="156" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="156" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 14 -->
+                  <rect x="168" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="168" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="168" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="168" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="168" y="40" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="168" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 15 -->
+                  <rect x="180" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="180" y="10" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="180" y="20" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="180" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="180" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="180" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 16 -->
+                  <rect x="192" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="192" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="192" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="192" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="192" y="40" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="192" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 17 -->
+                  <rect x="204" y="0" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="204" y="10" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="204" y="20" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="204" y="30" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="204" y="40" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="204" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 18 -->
+                  <rect x="216" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="216" y="10" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="216" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="216" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="216" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="216" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 19 -->
+                  <rect x="228" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="228" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="228" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="228" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="228" y="40" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="228" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 20 -->
+                  <rect x="240" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="240" y="10" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="240" y="20" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="240" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="240" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="240" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 21 -->
+                  <rect x="252" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="252" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="252" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="252" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="252" y="40" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="252" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 22 -->
+                  <rect x="264" y="0" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="264" y="10" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="264" y="20" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="264" y="30" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="264" y="40" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="264" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 23 -->
+                  <rect x="276" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="276" y="10" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="276" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="276" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="276" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="276" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 24 -->
+                  <rect x="288" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="288" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="288" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="288" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="288" y="40" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="288" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <!-- Col 25 -->
+                  <rect x="300" y="0" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="300" y="10" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="300" y="20" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="300" y="30" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="300" y="40" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="300" y="50" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <!-- Col 26 -->
+                  <rect x="312" y="0" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="312" y="10" width="8" height="8" rx="1.5" fill="#2563eb" />
+                  <rect x="312" y="20" width="8" height="8" rx="1.5" fill="var(--bg-secondary)" />
+                  <rect x="312" y="30" width="8" height="8" rx="1.5" fill="var(--bg-primary)" />
+                  <rect x="312" y="40" width="8" height="8" rx="1.5" fill="#1e3a8a" />
+                  <rect x="312" y="50" width="8" height="8" rx="1.5" fill="#2563eb" />
+                </g>
+              </svg>
+            </div>
+            
+            <div class="flex justify-between items-center text-xs text-slate-500 font-mono mt-4">
+              <span>Less</span>
+              <div class="flex space-x-1">
+                <span class="w-2.5 h-2.5 rounded-sm bg-slate-200 dark:bg-slate-900"></span>
+                <span class="w-2.5 h-2.5 rounded-sm bg-slate-300 dark:bg-slate-800"></span>
+                <span class="w-2.5 h-2.5 rounded-sm bg-indigo-200 dark:bg-indigo-950"></span>
+                <span class="w-2.5 h-2.5 rounded-sm bg-indigo-300 dark:bg-indigo-900"></span>
+                <span class="w-2.5 h-2.5 rounded-sm bg-blue-600"></span>
+              </div>
+              <span>More Commits</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. SERVICES & VALUE PROPOSITION -->
+    <section id="services" class="reveal-on-scroll space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">Value-Driven Services</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+          Delivering concrete engineering outputs that solve business constraints, improve performance, and protect data.
+        </p>
+      </div>
+
+      <!-- Services grid dynamically filled by js/app.js for easy pricing controls -->
+      <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- 10. GENERATIVE ENGINE OPTIMIZED FAQ SECTION -->
+    <section id="faq" class="reveal-on-scroll space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">Technical FAQ</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+          Factual answers detailing capabilities, stacks, and workflow execution for search crawlers and clients.
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q1" class="peer hidden faq-checkbox">
+          <label for="faq-q1" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">Who is Mohamed Rayen Segni?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Mohamed Rayen Segni is a professional Software Engineer based in Tunisia, specializing in high-throughput Backend Development, FastAPI applications, AI/RAG system integration, and secure DevOps setup.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q2" class="peer hidden faq-checkbox">
+          <label for="faq-q2" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">What technologies does he specialize in?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            His core technical stack includes Python, FastAPI, PostgreSQL, Ollama, LangChain, pgvector, OAuth2, JWT Authentication, and Linux DevOps pipelines (AWS, Render, Netlify).
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q3" class="peer hidden faq-checkbox">
+          <label for="faq-q3" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">Does he build FastAPI applications?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Yes. FastAPI is his primary tool for backend development. He structures asynchronous APIs following clean architecture principles, utilizing SQLAlchemy, Alembic for migrations, and complete Uvicorn integrations.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q4" class="peer hidden faq-checkbox">
+          <label for="faq-q4" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">Can he integrate AI into existing systems?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Yes, he integrates Large Language Models (LLMs) into system architectures. He designs custom vector databases with pgvector for semantic search operations and configures offline AI services using Ollama.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q5" class="peer hidden faq-checkbox">
+          <label for="faq-q5" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">Does he offer deployment?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Yes, he configures secure server deployments on Linux instances, set up Amazon Web Services (AWS) resources like EC2 and S3, handles DNS records, and implements automated build pipelines on Render and Netlify.
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q6" class="peer hidden faq-checkbox">
+          <label for="faq-q6" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">Does he work with startups?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Yes, he partners with startups to build robust API systems, design database relationships, configure authentication protocols, and build highly scalable architectures.
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q7" class="peer hidden faq-checkbox">
+          <label for="faq-q7" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">Is he available for freelance projects?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Yes. He is available for freelance contracts, API development services, database optimizations, and system security configurations.
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q8" class="peer hidden faq-checkbox">
+          <label for="faq-q8" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">Does he build RAG systems?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Yes. He builds Retrieval-Augmented Generation (RAG) models. This involves chunking files, creating vector embeddings, index queries inside pgvector databases, and feeding semantic data to LLMs via LangChain.
+          </div>
+        </div>
+
+        <!-- FAQ 9 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q9" class="peer hidden faq-checkbox">
+          <label for="faq-q9" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">Can he optimize cloud costs?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Yes. He audits running server architectures, optimizes database queries to lower hardware requirements, utilizes memory cache databases (Redis) to relieve CPU pressure, and removes idle virtual assets.
+          </div>
+        </div>
+
+        <!-- FAQ 10 -->
+        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+          <input type="checkbox" id="faq-q10" class="peer hidden faq-checkbox">
+          <label for="faq-q10" class="faq-header flex justify-between items-center cursor-pointer select-none">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">Which databases does he use?</h3>
+            <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </label>
+          <div class="faq-answer text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            He uses PostgreSQL for relational data, Redis for asynchronous task queues and query caching, and pgvector for AI semantic search coordinates.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 11. TECHNICAL BLOG FUTURE SUPPORT -->
+    <section id="blog" class="reveal-on-scroll space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">Technical Insights</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+          Tutorials, architecture reviews, and engineering articles regarding FastAPI, pgvector, and cloud systems.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Post 1 -->
+        <article class="p-6 bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-xl space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-mono text-blue-650 dark:text-blue-400 bg-blue-500/10 px-2 py-1 rounded font-bold">FastAPI / Security</span>
+            <span class="text-xs text-slate-500">Coming Q3 2026</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Architecting Asynchronous FastAPI Microservices</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            A guide on organizing project directories, configuring routers, managing database connections with async engines, and testing authentication blocks.
+          </p>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="p-6 bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-xl space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-mono text-purple-600 dark:text-purple-400 bg-purple-500/10 px-2 py-1 rounded font-bold">System Design</span>
+            <span class="text-xs text-slate-500">Coming Q4 2026</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Scaling Graph Calculations with compiled C code</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Evaluating performance limits of network propagation scripts. Integrating fast compiled C code into Python systems using ctypes bindings.
+          </p>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="p-6 bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-xl space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-mono text-cyan-650 dark:text-cyan-400 bg-cyan-500/10 px-2 py-1 rounded font-bold">AI / RAG</span>
+            <span class="text-xs text-slate-500">Coming Q1 2027</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">pgvector Indices Tuning for Private Database Search</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Comparing index speed (HNSW vs IVFFlat), optimizing vector query distances (Cosine, L2), and formatting LangChain embeddings.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 12. CONVERSION CTA & CONTACT FORM SECTION -->
+    <section id="contact" class="reveal-on-scroll py-12">
+      <div class="bg-gradient-to-br from-slate-100/80 via-slate-50/40 to-slate-100 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-950 border border-slate-200 dark:border-slate-900 rounded-3xl p-6 sm:p-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-80 h-80 rounded-full bg-blue-600/5 blur-[80px] pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative z-10">
+          
+          <!-- Contact Left Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-xs font-mono text-blue-600 dark:text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full font-bold">Secure Communications Channel</span>
+            <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">Let's Build Together</h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              If you require a scalable API service, custom LLM integrations, or a secure server deploy, write your requirements below to initiate a consultation.
+            </p>
+
+            <div class="space-y-4 pt-4 text-sm text-slate-600 dark:text-slate-400">
+              <div class="flex items-center space-x-3">
+                <span class="text-blue-600 dark:text-blue-500 font-mono font-bold">EMAIL:</span>
+                <a href="mailto:snrayen8@gmail.com" class="text-slate-900 dark:text-white hover:text-blue-500 transition-colors">snrayen8@gmail.com</a>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-purple-600 dark:text-purple-500 font-mono font-bold">WHATSAPP:</span>
+                <a href="https://wa.me/21622841069" target="_blank" rel="noopener" class="text-slate-900 dark:text-white hover:text-purple-400 transition-colors">+216 22841069</a>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-cyan-600 dark:text-cyan-500 font-mono font-bold">LOCATION:</span>
+                <span class="text-slate-900 dark:text-white">Tunis, Tunisia</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Right Column -->
+          <div class="lg:col-span-7">
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-name" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1 uppercase font-mono">Name *</label>
+                  <input type="text" id="form-name" required class="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-900 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 outline-none transition-colors" placeholder="e.g. Sarah Jenkins">
+                </div>
+                <div>
+                  <label for="form-email" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1 uppercase font-mono">Email Address *</label>
+                  <input type="email" id="form-email" required class="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-900 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 outline-none transition-colors" placeholder="e.g. sarah@startup.com">
+                </div>
+              </div>
+
+              <div>
+                <label for="form-subject" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1 uppercase font-mono">Subject</label>
+                <input type="text" id="form-subject" class="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-900 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 outline-none transition-colors" placeholder="e.g. FastAPI API project setup">
+              </div>
+
+              <div>
+                <label for="form-message" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1 uppercase font-mono">Message / Scope *</label>
+                <textarea id="form-message" required rows="4" class="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-900 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 outline-none transition-colors" placeholder="Describe your database schemas, required integrations, or timelines..."></textarea>
+              </div>
+
+              <button type="submit" class="magnetic-btn w-full sm:w-auto px-6 py-3.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
+                Submit Engineering Proposal
+              </button>
+
+              <div id="form-response" class="hidden"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 13. FOOTER -->
+  <footer class="border-t border-slate-200 dark:border-slate-900 bg-slate-100/80 dark:bg-slate-950/80 backdrop-blur-md py-12 mt-20 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      
+      <div class="text-center md:text-left space-y-2">
+        <span class="text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent tracking-tight">
+          MOHAMED RAYEN SEGNI
+        </span>
+        <p class="text-xs text-slate-500 font-mono">BACKEND & AI INFRASTRUCTURES &copy; 2026. ALL RIGHTS RESERVED.</p>
+      </div>
+
+      <!-- Navigation Links in Footer -->
+      <div class="flex flex-wrap justify-center gap-4 text-xs font-semibold text-slate-600 dark:text-slate-400">
+        <a href="#hero" class="hover:text-blue-500 transition-colors">Home</a>
+        <a href="#projects" class="hover:text-blue-500 transition-colors">Projects</a>
+        <a href="#expertise" class="hover:text-blue-500 transition-colors">Expertise</a>
+        <a href="#systems" class="hover:text-blue-500 transition-colors">Architectures</a>
+        <a href="#services" class="hover:text-blue-500 transition-colors">Services</a>
+        <a href="#faq" class="hover:text-blue-500 transition-colors">FAQ</a>
+      </div>
+
+      <div class="flex space-x-6 text-sm text-slate-600 dark:text-slate-400">
+        <a href="https://github.com/rayen-segni" target="_blank" rel="noopener" class="hover:text-slate-900 dark:hover:text-white transition-colors" aria-label="GitHub">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+        </a>
+        <a href="https://linkedin.com/in/mohamed-rayen-segni-1612a7325" target="_blank" rel="noopener" class="hover:text-slate-900 dark:hover:text-white transition-colors" aria-label="LinkedIn">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://wa.me/21622841069" target="_blank" rel="noopener" class="hover:text-slate-900 dark:hover:text-white transition-colors" aria-label="WhatsApp">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

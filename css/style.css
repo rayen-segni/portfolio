@@ -1,0 +1,274 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Base Styles & Theme Variables */
+:root {
+  --font-headings: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Light Theme (Default) */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-color: rgba(71, 85, 105, 0.1);
+  --primary-glow: rgba(37, 99, 235, 0.08);
+  --secondary-glow: rgba(139, 92, 246, 0.08);
+  --accent-glow: rgba(6, 182, 212, 0.08);
+}
+
+.dark {
+  /* Dark Theme */
+  --bg-primary: #030712;
+  --bg-secondary: #0b0f19;
+  --bg-card: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border-color: rgba(148, 163, 184, 0.1);
+  --primary-glow: rgba(37, 99, 235, 0.15);
+  --secondary-glow: rgba(139, 92, 246, 0.15);
+  --accent-glow: rgba(6, 182, 212, 0.15);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 5px;
+  border: 2px solid var(--bg-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+}
+
+/* Glassmorphism Styles */
+.glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Card Glow Effect (Interactive Mouse Tracking) */
+.glow-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 0) var(--mouse-y, 0),
+    var(--primary-glow) 0%,
+    var(--secondary-glow) 25%,
+    transparent 60%
+  );
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-card:hover::before {
+  opacity: 1;
+}
+
+.glow-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.dark .glow-card:hover {
+  border-color: rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Background Grids and Blobs */
+.bg-grid-glow {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 66, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 66, 0.03) 1px, transparent 1px);
+}
+
+.dark .bg-grid-glow {
+  background-image: 
+    linear-gradient(to right, rgba(148, 163, 184, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+}
+
+/* Floating Animations */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(0.5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+/* Pulse Animation for Glow Blobs */
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.2; }
+  33% { transform: scale(1.15) translate(30px, -50px); opacity: 0.35; }
+  66% { transform: scale(0.9) translate(-20px, 20px); opacity: 0.15; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 20s ease-in-out infinite;
+}
+
+/* Typing Indicator Animation */
+.cursor-typing::after {
+  content: '|';
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Timeline Components */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SVG System Architecture Animation */
+.svg-flow-path {
+  stroke-dasharray: 8, 8;
+  animation: flow 1.5s linear infinite;
+}
+
+@keyframes flow {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+
+.svg-node {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.svg-node:hover {
+  filter: drop-shadow(0px 0px 8px var(--accent-glow));
+  transform: scale(1.05);
+  transform-origin: center;
+}
+
+/* Custom Scroll Progress Indicator */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(to right, #2563eb, #8b5cf6, #06b6d4);
+  width: 0%;
+  z-index: 100;
+  transition: width 0.1s ease;
+}
+
+/* Scroll Reveal base state */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading Overlay */
+#loader-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #030712;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loader-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Custom Checkbox for FAQ */
+.faq-checkbox:checked ~ .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.faq-checkbox:checked ~ .faq-header .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+/* Magnetic Button Utility */
+.magnetic-btn {
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
