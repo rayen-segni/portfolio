@@ -319,29 +319,29 @@
 
         <!-- Floating Visual Display Column -->
         <div class="lg:col-span-5 relative flex justify-center items-center">
-          <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl glow-card">
+          <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl glow-card">
             <img src="assets/images/profile.png" alt="Mohamed Rayen Segni portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             <!-- Glass Overlay Info Panel -->
-            <div class="absolute bottom-4 left-4 right-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border border-slate-200 dark:border-slate-800/80 p-4 rounded-xl flex items-center justify-between">
+            <div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border border-slate-200 dark:border-slate-800/80 p-3 sm:p-4 rounded-xl flex items-center justify-between">
               <div>
-                <p class="text-xs text-blue-600 dark:text-blue-400 font-mono tracking-widest uppercase font-bold">Location</p>
-                <p class="text-sm font-semibold text-slate-800 dark:text-white">Tunisia (GMT+1)</p>
+                <p class="text-[10px] sm:text-xs text-blue-600 dark:text-blue-400 font-mono tracking-widest uppercase font-bold">Location</p>
+                <p class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-white">Tunisia (GMT+1)</p>
               </div>
               <div class="text-right">
-                <p class="text-xs text-purple-600 dark:text-purple-400 font-mono tracking-widest uppercase font-bold">Focus</p>
-                <p class="text-sm font-semibold text-slate-800 dark:text-white">FastAPI & AI/RAG</p>
+                <p class="text-[10px] sm:text-xs text-purple-600 dark:text-purple-400 font-mono tracking-widest uppercase font-bold">Focus</p>
+                <p class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-white">FastAPI & AI/RAG</p>
               </div>
             </div>
           </div>
 
           <!-- Floating Stat Badge 1 -->
-          <div class="absolute -top-4 -left-4 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float pointer-events-none">
+          <div class="hidden sm:block absolute -top-4 -left-4 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float pointer-events-none">
             <p class="text-xs text-slate-500 dark:text-slate-400">FastAPI Expert</p>
             <p class="text-sm font-semibold text-blue-600 dark:text-blue-400">Asynchronous Web Stack</p>
           </div>
 
           <!-- Floating Stat Badge 2 -->
-          <div class="absolute bottom-10 -right-6 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float-delayed pointer-events-none">
+          <div class="hidden sm:block absolute bottom-10 -right-6 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float-delayed pointer-events-none">
             <p class="text-xs text-slate-500 dark:text-slate-400">Security Audit</p>
             <p class="text-sm font-semibold text-purple-600 dark:text-purple-400">OAuth2 & JWT Integrity</p>
           </div>
