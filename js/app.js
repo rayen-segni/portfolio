@@ -3,63 +3,54 @@
  */
 
 // =========================================================================
-// SERVICES & PRICING CONFIGURATION
-// Modify prices, titles, badges, and descriptions here to update the site.
+// SERVICES CONFIGURATION
+// Manage services, titles, badges, and descriptions here.
 // =========================================================================
 const SERVICES_DATA = [
   {
+    title: "RAG Systems",
+    badge: "VECTOR SEARCH & LOCAL LLMS",
+    desc: "Building end-to-end Retrieval-Augmented Generation pipelines with vector databases (pgvector), document indexing, embeddings, and context-aware LLM generation."
+  },
+  {
     title: "Full Stack Platforms",
     badge: "CLIENT PORTALS & DASHBOARDS",
-    desc: "Complete setup from schema designs to fast web layouts. Includes certificate generation modules, Stripe billing, and CMS admin dashboards.",
-    price: "600–4,500+ TND"
+    desc: "Complete setup from schema designs to fast web layouts. Includes certificate generation modules, Stripe billing, and CMS admin dashboards."
   },
   {
     title: "Backend API Core",
     badge: "FASTAPI MICROSERVICES",
-    desc: "Structuring asynchronous RESTful routes, setting up SQLAlchemy relational database structures, and configuring Alembic table migrations.",
-    price: "300–1,800+ TND"
+    desc: "Structuring asynchronous RESTful routes, setting up SQLAlchemy relational database structures, and configuring Alembic table migrations."
   },
   {
     title: "Showcase Websites (Vitrine)",
     badge: "UI/UX & FRONTEND DEPLOYMENT",
-    desc: "Complete frontend project featuring customized UI/UX enhancements, responsive layouts, and domain deployment with secure certificate settings.",
-    price: "100–1,000+ TND"
-  },
-  {
-    title: "System Security",
-    badge: "AUTH AUDITS & ENCRYPTION",
-    desc: "Integrating JWT tokens, secure cookies, Role-Based Access Control, hashing logic (bcrypt), and auditing routes for SQL injections.",
-    price: "250–1,000+ TND"
+    desc: "Complete frontend project featuring customized UI/UX enhancements, responsive layouts, and domain deployment with secure certificate settings."
   },
   {
     title: "DevOps & Cloud",
     badge: "DEPLOYMENT & BUILD HOOKS",
-    desc: "Deploying servers on AWS/Render/Netlify, configuring Nginx proxies, organizing environment variables, and establishing CI/CD setups.",
-    price: "100–700+ TND"
+    desc: "Deploying servers on AWS/Render/Netlify, configuring Nginx proxies, organizing environment variables, and establishing CI/CD setups."
   },
   {
     title: "API Enhancements",
     badge: "LATENCY & REFACTORING",
-    desc: "Diagnosing database queries, adding Redis cache hooks, refactoring redundant functions, and reducing overall payload latency.",
-    price: "150–700+ TND"
+    desc: "Diagnosing database queries, adding Redis cache hooks, refactoring redundant functions, and reducing overall payload latency."
   },
   {
     title: "SEO & GEO Engine",
     badge: "AI SEARCH OPTIMIZATION",
-    desc: "Optimizing website markup structure for search engines (sitemaps, meta descriptions) and generative AI engines (JSON-LD schemas, citation layouts).",
-    price: "100–500+ TND"
+    desc: "Optimizing website markup structure for search engines (sitemaps, meta descriptions) and generative AI engines (JSON-LD schemas, citation layouts)."
   },
   {
     title: "Cloud Cost Audits",
     badge: "INFRASTRUCTURE TUNING",
-    desc: "Auditing hosting services, disabling idle virtual hardware, optimizing storage buckets, and scaling database instances to save budget.",
-    price: "300–1,500+ TND"
+    desc: "Auditing hosting services, disabling idle virtual hardware, optimizing storage buckets, and scaling database instances to save budget."
   },
   {
-    title: "AI RAG Agents",
-    badge: "LANGCHAIN PIPELINES",
-    desc: "Developing custom agent logic to answer context-aware queries from structured business documents using local or cloud AI models.",
-    price: "COMING SOON",
+    title: "Custom AI Agents",
+    badge: "AUTONOMOUS WORKFLOWS",
+    desc: "Developing specialized autonomous AI agents designed to execute multi-step workflows, tool calls, and complex task automation.",
     comingSoon: true
   }
 ];
@@ -150,7 +141,7 @@ function renderServices() {
           </div>
           <div class="pt-6 border-t border-slate-100 dark:border-slate-900 mt-6 flex justify-between items-center">
             <span class="text-xs font-semibold text-purple-600 dark:text-purple-400">COMING SOON</span>
-            <span class="text-[10px] font-mono text-slate-500">Q3 2026</span>
+            <span class="text-[10px] font-mono text-slate-500">In Development</span>
           </div>
         </div>
       `;
@@ -159,11 +150,18 @@ function renderServices() {
       <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-6 rounded-xl flex flex-col justify-between hover:border-blue-500/30 transition-all">
         <div class="space-y-4">
           <h3 class="text-lg font-bold text-slate-900 dark:text-white">${srv.title}</h3>
-          <p class="text-[10px] text-slate-500 font-mono tracking-widest uppercase">${srv.badge}</p>
+          <p class="text-[10px] text-blue-600 dark:text-blue-400 font-mono tracking-widest uppercase font-semibold">${srv.badge}</p>
           <p class="text-sm text-slate-600 dark:text-slate-400">${srv.desc}</p>
         </div>
         <div class="pt-6 border-t border-slate-100 dark:border-slate-900 mt-6 flex justify-between items-center">
-          <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">${srv.price}</span>
+          <span class="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold flex items-center space-x-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            <span>Available</span>
+          </span>
+          <a href="#contact" class="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-500 flex items-center space-x-1 transition-colors">
+            <span>Inquire</span>
+            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+          </a>
         </div>
       </div>
     `;
