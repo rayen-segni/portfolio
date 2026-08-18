@@ -251,26 +251,29 @@
     </div>
   </header>
 
-  <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
+  <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-24 lg:space-y-28 w-full overflow-x-hidden">
 
     <!-- 1. HERO SECTION -->
-    <section id="hero" class="min-h-[calc(100vh-5rem)] flex flex-col justify-center py-12 relative overflow-hidden">
-      <!-- Background Glow Orbs -->
-      <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-blue-600/10 blur-[100px] pointer-events-none animate-pulse-slow"></div>
-      <div class="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-80 h-80 rounded-full bg-purple-600/10 blur-[100px] pointer-events-none animate-pulse-slow"></div>
+    <section id="hero" class="min-h-0 lg:min-h-[calc(100vh-5.5rem)] flex flex-col justify-start lg:justify-center pt-1 sm:pt-3 lg:pt-0 pb-6 lg:pb-6 relative overflow-hidden max-w-full">
+      <!-- Background Glow Orbs (safely contained) -->
+      <div class="absolute inset-0 pointer-events-none overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-64 sm:w-80 h-64 sm:h-80 rounded-full bg-blue-600/10 blur-[80px] sm:blur-[100px] animate-pulse-slow"></div>
+        <div class="absolute bottom-1/4 right-1/4 translate-x-1/4 translate-y-1/4 w-64 sm:w-80 h-64 sm:h-80 rounded-full bg-purple-600/10 blur-[80px] sm:blur-[100px] animate-pulse-slow"></div>
+      </div>
 
       <!-- AI GEO Machine-Readable Summary -->
       <p class="sr-only">Mohamed Rayen Segni is a professional Software Engineer based in Tunisia, specializing in Backend Engineering, secure FastAPI microservices, and AI/RAG integrations.</p>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <!-- Hero Details Column -->
-        <div class="lg:col-span-7 space-y-6 text-left">
-          <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full text-blue-600 dark:text-blue-400 text-xs font-mono">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center py-2 lg:py-4">
+        
+        <!-- Main Text Column -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
+          <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-3.5 py-1.5 rounded-full text-blue-600 dark:text-blue-400 text-xs font-mono">
             <span class="w-2 h-2 rounded-full bg-blue-500 animate-ping"></span>
             <span>AVAILABLE FOR CONTRACTS & DEPLOYMENTS</span>
           </div>
 
-          <h1 class="text-4xl sm:text-6xl font-bold tracking-tight leading-[1.1] text-slate-900 dark:text-white">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.12] text-slate-900 dark:text-white break-words">
             Building Secure Systems, <br>
             <span class="bg-gradient-to-r from-blue-500 via-purple-450 to-cyan-400 bg-clip-text text-transparent">
               Scalable APIs
@@ -278,12 +281,12 @@
             and <span class="cursor-typing" id="typing-text" data-words='["Intelligent AI Solutions.", "RAG Architectures.", "FastAPI Apps."]'>Intelligent AI Solutions.</span>
           </h1>
 
-          <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl font-normal">
+          <p class="text-sm sm:text-base lg:text-lg text-slate-600 dark:text-slate-400 max-w-2xl font-normal leading-relaxed">
             Software Engineer specializing in production-ready Backend Engineering, AI Integration, DevOps pipelines, and secure database architectures. Delivering high-throughput, low-latency, and business-focused systems.
           </p>
 
           <!-- Action CTA Group -->
-          <div class="flex flex-wrap gap-4 pt-2">
+          <div class="flex flex-wrap gap-3 sm:gap-4 pt-1">
             <a href="#contact" class="magnetic-btn px-6 py-3.5 bg-blue-600 text-white rounded-lg font-medium text-sm hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20 transition-all flex items-center space-x-2">
               <span>Hire Mohamed</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -301,25 +304,27 @@
             </a>
           </div>
 
-          <!-- Social Matrix -->
-          <div class="flex items-center space-x-6 pt-4 text-slate-400 dark:text-slate-500">
-            <a href="https://github.com/rayen-segni" target="_blank" rel="noopener" aria-label="GitHub Account" class="hover:text-slate-900 dark:hover:text-white transition-colors">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-            </a>
-            <a href="https://linkedin.com/in/mohamed-rayen-segni-1612a7325" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="hover:text-slate-900 dark:hover:text-white transition-colors">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            </a>
-            <a href="https://wa.me/21622841069" target="_blank" rel="noopener" aria-label="WhatsApp Messaging" class="hover:text-slate-900 dark:hover:text-white transition-colors">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
-            </a>
+          <!-- Highlights & Social Matrix -->
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-4 border-t border-slate-200 dark:border-slate-900/80">
+            <div class="flex items-center space-x-6 text-slate-400 dark:text-slate-500">
+              <a href="https://github.com/rayen-segni" target="_blank" rel="noopener" aria-label="GitHub Account" class="hover:text-slate-900 dark:hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+              </a>
+              <a href="https://linkedin.com/in/mohamed-rayen-segni-1612a7325" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="hover:text-slate-900 dark:hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://wa.me/21622841069" target="_blank" rel="noopener" aria-label="WhatsApp Messaging" class="hover:text-slate-900 dark:hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Floating Visual Display Column -->
-        <div class="lg:col-span-5 relative flex justify-center items-center">
-          <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl glow-card">
+        <!-- Floating Visual Display Column (Desktop only) -->
+        <div class="hidden lg:flex lg:col-span-5 relative justify-center items-center">
+          <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl glow-card">
             <img src="assets/images/profile.png" alt="Mohamed Rayen Segni portrait" class="w-full h-full object-cover">
             <!-- Glass Overlay Info Panel -->
             <div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border border-slate-200 dark:border-slate-800/80 p-3 sm:p-4 rounded-xl flex items-center justify-between">
@@ -335,60 +340,61 @@
           </div>
 
           <!-- Floating Stat Badge 1 -->
-          <div class="hidden sm:block absolute -top-4 -left-4 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float pointer-events-none">
+          <div class="hidden lg:block absolute -top-4 -left-4 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float pointer-events-none">
             <p class="text-xs text-slate-500 dark:text-slate-400">FastAPI Expert</p>
             <p class="text-sm font-semibold text-blue-600 dark:text-blue-400">Asynchronous Web Stack</p>
           </div>
 
           <!-- Floating Stat Badge 2 -->
-          <div class="hidden sm:block absolute bottom-10 -right-6 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float-delayed pointer-events-none">
+          <div class="hidden lg:block absolute bottom-10 -right-6 bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-2.5 rounded-lg shadow-xl animate-float-delayed pointer-events-none">
             <p class="text-xs text-slate-500 dark:text-slate-400">Security Audit</p>
             <p class="text-sm font-semibold text-purple-600 dark:text-purple-400">OAuth2 & JWT Integrity</p>
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- 2. CREDIBILITY & STATS SECTION -->
-    <section id="credibility" class="reveal-on-scroll py-8 border-y border-slate-200 dark:border-slate-900/60">
+    <section id="credibility" class="reveal-on-scroll py-8 border-y border-slate-200 dark:border-slate-900/60 overflow-hidden">
       <div class="max-w-4xl mx-auto text-center space-y-6">
         <p class="text-xs font-mono tracking-widest text-slate-500 dark:text-slate-500 uppercase font-bold">Trusted Collaborations & Professional Experience</p>
         
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-75">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 items-center justify-items-center opacity-75">
           <div class="text-center">
-            <span class="text-xl font-bold tracking-wider text-slate-700 dark:text-slate-400">MG ACADEMY</span>
-            <p class="text-[10px] font-mono text-purple-600 dark:text-purple-400 font-bold">FULL STACK INTERNSHIP</p>
+            <span class="text-sm sm:text-base md:text-xl font-bold tracking-normal sm:tracking-wider text-slate-700 dark:text-slate-400">MG ACADEMY</span>
+            <p class="text-[9px] sm:text-[10px] font-mono text-purple-600 dark:text-purple-400 font-bold">FULL STACK INTERN</p>
           </div>
           <div class="text-center">
-            <span class="text-xl font-bold tracking-wider text-slate-700 dark:text-slate-400">ELECNOVA</span>
-            <p class="text-[10px] font-mono text-blue-600 dark:text-blue-400 font-bold">FREELANCE CLIENT</p>
+            <span class="text-sm sm:text-base md:text-xl font-bold tracking-normal sm:tracking-wider text-slate-700 dark:text-slate-400">ELECNOVA</span>
+            <p class="text-[9px] sm:text-[10px] font-mono text-blue-600 dark:text-blue-400 font-bold">FREELANCE CLIENT</p>
           </div>
           <div class="text-center">
-            <span class="text-xl font-bold tracking-wider text-slate-700 dark:text-slate-400">GITHUB</span>
-            <p class="text-[10px] font-mono text-cyan-600 dark:text-cyan-400 font-bold">OPEN SOURCE CORES</p>
+            <span class="text-sm sm:text-base md:text-xl font-bold tracking-normal sm:tracking-wider text-slate-700 dark:text-slate-400">GITHUB</span>
+            <p class="text-[9px] sm:text-[10px] font-mono text-cyan-600 dark:text-cyan-400 font-bold">OPEN SOURCE</p>
           </div>
           <div class="text-center">
-            <span class="text-xl font-bold tracking-wider text-slate-700 dark:text-slate-400">NETLIFY/RENDER</span>
-            <p class="text-[10px] font-mono text-emerald-600 dark:text-emerald-400 font-bold">PROD DEPLOYMENTS</p>
+            <span class="text-sm sm:text-base md:text-xl font-bold tracking-normal sm:tracking-wider text-slate-700 dark:text-slate-400">NETLIFY/RENDER</span>
+            <p class="text-[9px] sm:text-[10px] font-mono text-emerald-600 dark:text-emerald-400 font-bold">PROD DEPLOYS</p>
           </div>
         </div>
 
         <!-- Ticking Stats Dashboard -->
-        <div id="stats-section" class="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
-          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-6 rounded-xl text-center">
-            <p class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="2" data-suffix="+">0</p>
+        <div id="stats-section" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 pt-12">
+          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-4 sm:p-6 rounded-xl text-center">
+            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="2" data-suffix="+">0</p>
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Years Production Experience</p>
           </div>
-          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-6 rounded-xl text-center">
-            <p class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="6" data-suffix="+">0</p>
+          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-4 sm:p-6 rounded-xl text-center">
+            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="6" data-suffix="+">0</p>
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Major System Architectures</p>
           </div>
-          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-6 rounded-xl text-center">
-            <p class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="100" data-suffix="%">0</p>
+          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-4 sm:p-6 rounded-xl text-center">
+            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="100" data-suffix="%">0</p>
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Asynchronous Coverage</p>
           </div>
-          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-6 rounded-xl text-center">
-            <p class="text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="10" data-suffix="+">0</p>
+          <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 p-4 sm:p-6 rounded-xl text-center">
+            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white font-mono counter-val" data-target="10" data-suffix="+">0</p>
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Security Modules Built</p>
           </div>
         </div>
@@ -690,12 +696,12 @@
         </p>
       </div>
 
-      <div class="relative border-l-2 border-slate-200 dark:border-slate-800 max-w-3xl mx-auto pl-8 space-y-12">
+      <div class="relative border-l-2 border-slate-200 dark:border-slate-800 max-w-3xl mx-auto pl-6 sm:pl-8 space-y-12">
         
         <!-- Timeline Item 1 -->
         <div class="relative timeline-item">
           <!-- Connector Dot -->
-          <div class="absolute -left-[41px] top-1.5 w-6 h-6 rounded-full bg-slate-50 dark:bg-slate-950 border-4 border-blue-500 flex items-center justify-center">
+          <div class="absolute -left-[35px] sm:-left-[43px] top-1.5 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-slate-50 dark:bg-slate-950 border-4 border-blue-500 flex items-center justify-center">
             <span class="w-1.5 h-1.5 bg-blue-500 dark:bg-white rounded-full"></span>
           </div>
           <span class="text-xs font-mono text-blue-600 dark:text-blue-400">2026 - 2027</span>
@@ -709,7 +715,7 @@
         <!-- Timeline Item 2 -->
         <div class="relative timeline-item">
           <!-- Connector Dot -->
-          <div class="absolute -left-[41px] top-1.5 w-6 h-6 rounded-full bg-slate-50 dark:bg-slate-950 border-4 border-purple-500 flex items-center justify-center">
+          <div class="absolute -left-[35px] sm:-left-[43px] top-1.5 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-slate-50 dark:bg-slate-950 border-4 border-purple-500 flex items-center justify-center">
             <span class="w-1.5 h-1.5 bg-purple-500 dark:bg-white rounded-full"></span>
           </div>
           <span class="text-xs font-mono text-purple-600 dark:text-purple-400">2025 - 2026</span>
@@ -723,7 +729,7 @@
         <!-- Timeline Item 3 -->
         <div class="relative timeline-item">
           <!-- Connector Dot -->
-          <div class="absolute -left-[41px] top-1.5 w-6 h-6 rounded-full bg-slate-50 dark:bg-slate-950 border-4 border-cyan-500 flex items-center justify-center">
+          <div class="absolute -left-[35px] sm:-left-[43px] top-1.5 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-slate-50 dark:bg-slate-950 border-4 border-cyan-500 flex items-center justify-center">
             <span class="w-1.5 h-1.5 bg-cyan-500 dark:bg-white rounded-full"></span>
           </div>
           <span class="text-xs font-mono text-cyan-600 dark:text-cyan-400">2024 - 2025</span>
@@ -757,7 +763,7 @@
               <span class="text-xs font-mono text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded">Healthcare Architecture Case Study</span>
               <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Appointment Service API</h3>
               
-              <div class="case-study-tabs flex space-x-2 border-b border-slate-200 dark:border-slate-800 pb-2" data-content-id="appoint-tab-content">
+              <div class="case-study-tabs flex flex-wrap gap-2 border-b border-slate-200 dark:border-slate-800 pb-2" data-content-id="appoint-tab-content">
                 <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-blue-600 text-white transition-all" data-tab="problem">Problem & Constraints</button>
                 <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="security">Security & Design</button>
                 <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="value">Business Value</button>
@@ -781,8 +787,8 @@
             </div>
 
             <!-- SVG Diagram Panel -->
-            <div class="lg:w-1/2 w-full bg-slate-100 dark:bg-slate-950 rounded-xl p-4 border border-slate-200 dark:border-slate-900 flex justify-center">
-              <svg viewBox="0 0 500 280" class="w-full max-w-[450px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="lg:w-1/2 w-full min-w-0 bg-slate-100 dark:bg-slate-950 rounded-xl p-3 sm:p-4 border border-slate-200 dark:border-slate-900 flex justify-center overflow-hidden">
+              <svg viewBox="0 0 500 280" class="w-full h-auto max-w-[450px] block" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- User to Gateway -->
                 <rect x="20" y="110" width="70" height="50" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
                 <text x="55" y="140" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">Clients</text>
@@ -825,7 +831,7 @@
               <span class="text-xs font-mono text-purple-600 dark:text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded">DSA Concept Case Study</span>
               <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Misinformation Propagation Detector</h3>
               
-              <div class="case-study-tabs flex space-x-2 border-b border-slate-200 dark:border-slate-800 pb-2" data-content-id="misinfo-tab-content">
+              <div class="case-study-tabs flex flex-wrap gap-2 border-b border-slate-200 dark:border-slate-800 pb-2" data-content-id="misinfo-tab-content">
                 <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-blue-600 text-white transition-all" data-tab="problem">Problem & Constraints</button>
                 <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="security">Security & Design</button>
                 <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="value">Educational Value</button>
@@ -849,8 +855,8 @@
             </div>
 
             <!-- SVG Diagram Panel -->
-            <div class="lg:w-1/2 w-full bg-slate-100 dark:bg-slate-950 rounded-xl p-4 border border-slate-200 dark:border-slate-900 flex justify-center">
-              <svg viewBox="0 0 500 280" class="w-full max-w-[450px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="lg:w-1/2 w-full min-w-0 bg-slate-100 dark:bg-slate-950 rounded-xl p-3 sm:p-4 border border-slate-200 dark:border-slate-900 flex justify-center overflow-hidden">
+              <svg viewBox="0 0 500 280" class="w-full h-auto max-w-[450px] block" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- User Node -->
                 <rect x="15" y="110" width="70" height="50" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
                 <text x="50" y="140" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">UI Frontend</text>
@@ -886,7 +892,7 @@
               <span class="text-xs font-mono text-cyan-600 dark:text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded">E-Learning Architecture Case Study</span>
               <h3 class="text-2xl font-bold text-slate-900 dark:text-white">MG Academy CMS</h3>
               
-              <div class="case-study-tabs flex space-x-2 border-b border-slate-200 dark:border-slate-800 pb-2" data-content-id="mg-tab-content">
+              <div class="case-study-tabs flex flex-wrap gap-2 border-b border-slate-200 dark:border-slate-800 pb-2" data-content-id="mg-tab-content">
                 <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-blue-600 text-white transition-all" data-tab="problem">Problem & Constraints</button>
                 <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="security">Security & Design</button>
                 <button class="tab-btn px-3 py-1.5 text-xs font-semibold rounded bg-slate-200 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-all" data-tab="value">Business Value</button>
@@ -910,8 +916,8 @@
             </div>
 
             <!-- SVG Diagram Panel -->
-            <div class="lg:w-1/2 w-full bg-slate-100 dark:bg-slate-950 rounded-xl p-4 border border-slate-200 dark:border-slate-900 flex justify-center">
-              <svg viewBox="0 0 500 280" class="w-full max-w-[450px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="lg:w-1/2 w-full min-w-0 bg-slate-100 dark:bg-slate-950 rounded-xl p-3 sm:p-4 border border-slate-200 dark:border-slate-900 flex justify-center overflow-hidden">
+              <svg viewBox="0 0 500 280" class="w-full h-auto max-w-[450px] block" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Nginx Gateway -->
                 <rect x="15" y="110" width="70" height="50" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
                 <text x="50" y="140" fill="#f8fafc" font-size="10" font-family="Space Grotesk" text-anchor="middle">Nginx Proxy</text>
@@ -949,8 +955,8 @@
       </div>
     </section>
 
-    <!-- 7. ENGINEERING PHILOSOPHY SECTION -->
-    <section id="philosophy" class="reveal-on-scroll space-y-12">
+    <!-- 7. ENGINEERING PHILOSOPHY SECTION (Hidden on mobile) -->
+    <section id="philosophy" class="hidden md:block reveal-on-scroll space-y-12">
       <div class="text-center space-y-3">
         <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">Engineering Philosophy</h2>
         <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
@@ -1098,7 +1104,7 @@
         </div>
 
         <!-- FAQ 4 -->
-        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+        <div class="hidden md:block bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
           <input type="checkbox" id="faq-q4" class="peer hidden faq-checkbox">
           <label for="faq-q4" class="faq-header flex justify-between items-center cursor-pointer select-none">
             <h3 class="text-base font-semibold text-slate-900 dark:text-white">Can he integrate AI into existing systems?</h3>
@@ -1112,7 +1118,7 @@
         </div>
 
         <!-- FAQ 5 -->
-        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+        <div class="hidden md:block bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
           <input type="checkbox" id="faq-q5" class="peer hidden faq-checkbox">
           <label for="faq-q5" class="faq-header flex justify-between items-center cursor-pointer select-none">
             <h3 class="text-base font-semibold text-slate-900 dark:text-white">Does he offer deployment?</h3>
@@ -1126,7 +1132,7 @@
         </div>
 
         <!-- FAQ 6 -->
-        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+        <div class="hidden md:block bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
           <input type="checkbox" id="faq-q6" class="peer hidden faq-checkbox">
           <label for="faq-q6" class="faq-header flex justify-between items-center cursor-pointer select-none">
             <h3 class="text-base font-semibold text-slate-900 dark:text-white">Does he work with startups?</h3>
@@ -1140,7 +1146,7 @@
         </div>
 
         <!-- FAQ 7 -->
-        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+        <div class="hidden md:block bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
           <input type="checkbox" id="faq-q7" class="peer hidden faq-checkbox">
           <label for="faq-q7" class="faq-header flex justify-between items-center cursor-pointer select-none">
             <h3 class="text-base font-semibold text-slate-900 dark:text-white">Is he available for freelance projects?</h3>
@@ -1154,7 +1160,7 @@
         </div>
 
         <!-- FAQ 8 -->
-        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+        <div class="hidden md:block bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
           <input type="checkbox" id="faq-q8" class="peer hidden faq-checkbox">
           <label for="faq-q8" class="faq-header flex justify-between items-center cursor-pointer select-none">
             <h3 class="text-base font-semibold text-slate-900 dark:text-white">Does he build RAG systems?</h3>
@@ -1168,7 +1174,7 @@
         </div>
 
         <!-- FAQ 9 -->
-        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+        <div class="hidden md:block bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
           <input type="checkbox" id="faq-q9" class="peer hidden faq-checkbox">
           <label for="faq-q9" class="faq-header flex justify-between items-center cursor-pointer select-none">
             <h3 class="text-base font-semibold text-slate-900 dark:text-white">Can he optimize cloud costs?</h3>
@@ -1182,7 +1188,7 @@
         </div>
 
         <!-- FAQ 10 -->
-        <div class="bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
+        <div class="hidden md:block bg-white dark:bg-slate-900/30 border border-slate-200 dark:border-slate-900 rounded-lg p-5 relative overflow-hidden">
           <input type="checkbox" id="faq-q10" class="peer hidden faq-checkbox">
           <label for="faq-q10" class="faq-header flex justify-between items-center cursor-pointer select-none">
             <h3 class="text-base font-semibold text-slate-900 dark:text-white">Which databases does he use?</h3>
@@ -1198,8 +1204,8 @@
       </div>
     </section>
 
-    <!-- 11. TECHNICAL BLOG FUTURE SUPPORT -->
-    <section id="blog" class="reveal-on-scroll space-y-12">
+    <!-- 11. TECHNICAL BLOG FUTURE SUPPORT (Hidden on mobile) -->
+    <section id="blog" class="hidden md:block reveal-on-scroll space-y-12">
       <div class="text-center space-y-3">
         <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">Technical Insights</h2>
         <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
@@ -1250,8 +1256,10 @@
 
     <!-- 12. CONVERSION CTA & CONTACT FORM SECTION -->
     <section id="contact" class="reveal-on-scroll py-12">
-      <div class="bg-gradient-to-br from-slate-100/80 via-slate-50/40 to-slate-100 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-950 border border-slate-200 dark:border-slate-900 rounded-3xl p-6 sm:p-12 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-80 h-80 rounded-full bg-blue-600/5 blur-[80px] pointer-events-none"></div>
+      <div class="bg-gradient-to-br from-slate-100/80 via-slate-50/40 to-slate-100 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-950 border border-slate-200 dark:border-slate-900 rounded-2xl sm:rounded-3xl p-4 sm:p-12 relative overflow-hidden max-w-full">
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 sm:w-80 h-64 sm:h-80 rounded-full bg-blue-600/5 blur-[60px] sm:blur-[80px]"></div>
+        </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative z-10">
           
